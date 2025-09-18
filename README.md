@@ -8,36 +8,36 @@ The goal of this project is to transform raw data into a clean and reliable form
 ⚙️ Steps in Data Cleaning
 1. Remove Duplicates
 
-Created a staging table to avoid modifying raw data directly.
+    Created a staging table to avoid modifying raw data directly.
 
-Used ROW_NUMBER() with PARTITION BY to identify duplicate rows.
+    Used ROW_NUMBER() with PARTITION BY to identify duplicate rows.
 
-Deleted duplicate entries while keeping only the first occurrence.
+    Deleted duplicate entries while keeping only the first occurrence.
 
 
 2. Standardize the Data
 
-Removed unwanted spaces using TRIM().
+    Removed unwanted spaces using TRIM().
 
-Standardized industry names (e.g., "Crypto", "CryptoCurrency" → Crypto).
+    Standardized industry names (e.g., "Crypto", "CryptoCurrency" → Crypto).
 
-Fixed inconsistent country names (United States. → United States).
+    Fixed inconsistent country names (United States. → United States).
 
-Converted date column from text to proper DATE format.
+    Converted date column from text to proper DATE format.
 
 
 3. Handle NULL or Blank Values
 
-Replaced empty industry values with NULL.
+    Replaced empty industry values with NULL.
 
-Filled missing industry values by comparing with other entries of the same company.
+    Filled missing industry values by comparing with other entries of the same company.
 
-Deleted records where both total_laid_off and percentage_laid_off were NULL.
+    Deleted records where both total_laid_off and percentage_laid_off were NULL.
 
 
 4. Remove Unnecessary Columns
 
-Dropped helper columns like row_num created for duplicate removal.
+    Dropped helper columns like row_num created for duplicate removal.
 
 
 📂 Files in the Project
