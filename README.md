@@ -42,17 +42,17 @@ The goal of this project is to transform raw data into a clean and reliable form
 
 📂 Files in the Project
 
-layoffs.csv → Raw dataset file.
+   layoffs.csv → Raw dataset file.
 
-layoffs_cleaning.sql → SQL script for the entire data cleaning process.
+   layoffs_cleaning.sql → SQL script for the entire data cleaning process.
 
 
 📊 Key Learnings
 
-Using CTE and ROW_NUMBER() to detect duplicates.
+   Using CTE and ROW_NUMBER() to detect duplicates.
 
-Standardizing categorical fields for consistency.
+   Standardizing categorical fields for consistency.
 
-Converting date formats for time-series analysis.
+   Converting date formats for time-series analysis.
 
-Handling missing values effectively.
+   Handling missing values effectively.
