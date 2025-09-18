@@ -14,6 +14,7 @@ Used ROW_NUMBER() with PARTITION BY to identify duplicate rows.
 
 Deleted duplicate entries while keeping only the first occurrence.
 
+
 2. Standardize the Data
 
 Removed unwanted spaces using TRIM().
@@ -24,6 +25,7 @@ Fixed inconsistent country names (United States. → United States).
 
 Converted date column from text to proper DATE format.
 
+
 3. Handle NULL or Blank Values
 
 Replaced empty industry values with NULL.
@@ -32,9 +34,11 @@ Filled missing industry values by comparing with other entries of the same compa
 
 Deleted records where both total_laid_off and percentage_laid_off were NULL.
 
+
 4. Remove Unnecessary Columns
 
 Dropped helper columns like row_num created for duplicate removal.
+
 
 📂 Files in the Project
 
@@ -42,7 +46,6 @@ layoffs.csv → Raw dataset file.
 
 layoffs_cleaning.sql → SQL script for the entire data cleaning process.
 
-README.md → Documentation of the project.
 
 📊 Key Learnings
 
