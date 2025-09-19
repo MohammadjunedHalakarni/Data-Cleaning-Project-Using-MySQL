@@ -1,4 +1,5 @@
 🗃️ SQL Data Cleaning Project – World Layoffs Dataset
+
 📌 Project Overview
 
 This project focuses on cleaning and preparing the world_layoffs dataset using MySQL.
